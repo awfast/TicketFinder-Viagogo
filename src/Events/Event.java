@@ -2,13 +2,13 @@ package Events;
 
 public class Event {
 
-    int x,y,identifier,capacity,price;
+    int x,y,identifier,tickets,price;
 
-    public Event(int x, int y, int identifier, int capacity, int price) {
+    public Event(int x, int y, int identifier, int tickets, int price) {
         this.x = x;
         this.y = y;
         this.identifier = identifier;
-        this.capacity = capacity;
+        this.tickets = tickets;
         this.price = price;
     }
 
@@ -24,8 +24,8 @@ public class Event {
         this.identifier = id;
     }
 
-    public void setCapacity(int cap) {
-        this.capacity = cap;
+    public void setTicketNumber(int tickets) {
+        this.tickets = tickets;
     }
 
     public void setPrice(int p) {
@@ -44,8 +44,8 @@ public class Event {
         return identifier;
     }
 
-    public int getCapacity() {
-        return capacity;
+    public int getTicketNumber() {
+        return tickets;
     }
 
     public int getPrice() {

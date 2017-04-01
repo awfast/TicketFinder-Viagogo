@@ -21,15 +21,16 @@ public class DataSeeder {
             int y = rand.nextInt(21) + -10;
 
             counter++;
-            int capacity = rand.nextInt(200) + 60;
+            //Each event has 0 or more tickets
+            int tickets = rand.nextInt(300) + 0;
             int price = rand.nextInt(300) + 30;
-            Event e = new Event(x, y, counter, capacity, price);
+            Event e = new Event(x, y, counter, tickets, price);
             allEvents.add(e);
         }
 
         System.out.println("List of events: ");
         for(int i=0; i<allEvents.size(); i++) {
-            System.out.println("X: " + allEvents.get(i).getX() + ", Y:" + allEvents.get(i).getY() + ", ID: " + allEvents.get(i).getIdentifier() + ", Capacity: " + allEvents.get(i).getCapacity() + ", Price: " +  allEvents.get(i).getPrice());
+            System.out.println("X: " + allEvents.get(i).getX() + ", Y:" + allEvents.get(i).getY() + ", ID: " + allEvents.get(i).getIdentifier() + ", Tickets: " + allEvents.get(i).getTicketNumber() + ", Price: " +  allEvents.get(i).getPrice());
         }
     }
 }
