@@ -2,9 +2,7 @@ package Input;
 
 import Events.DataSeeder;
 
-import java.util.List;
 import java.util.Scanner;
-import java.util.concurrent.TimeUnit;
 
 public class InputReader {
     DataSeeder data = new DataSeeder();
@@ -43,6 +41,7 @@ public class InputReader {
                     return true;
                 }
             } else {
+                //cases for(x,x), (xx,xx), (x, xx), (xx, x)
                 if(input.matches("\\d,\\d") || input.matches("\\d{2},\\d{2}") || input.matches("\\d,\\d{2}") || input.matches("\\d{2},\\d")) {
                     return true;
                 }

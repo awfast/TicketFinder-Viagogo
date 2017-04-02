@@ -1,6 +1,5 @@
 package Main;
 
-import Events.DataSeeder;
 import Input.InputReader;
 
 public class Main {
