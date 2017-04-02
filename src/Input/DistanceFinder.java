@@ -30,7 +30,7 @@ public class DistanceFinder  {
             if (counter < 5) {
                 List<Double> allPrices = distance.getValue().getPrice();
                 Collections.sort(allPrices);
-                System.out.println("Event" + distance.getValue().getIdentifier() + " - $" + allPrices.get(1) + ", Distance " + distance.getKey());
+                System.out.println("Event" + distance.getValue().getIdentifier() + " - $" + allPrices.get(0) + ", Distance " + distance.getKey());
                 counter++;
             }
         }
