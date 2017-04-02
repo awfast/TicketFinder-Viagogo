@@ -16,26 +16,6 @@ public class Event {
         this.prices = prices;
     }
 
-    public void setX(int x) {
-        this.x = x;
-    }
-
-    public void setY(int y) {
-        this.y = y;
-    }
-
-    public void setIdentifier(String id) {
-        this.identifier = id;
-    }
-
-    public void setTicketNumber(int tickets) {
-        this.tickets = tickets;
-    }
-
-    public void setPrices(List<Double> p) {
-        this.prices = p;
-    }
-
     public int getX() {
         return this.x;
     }

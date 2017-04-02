@@ -13,7 +13,7 @@ public class DataSeeder {
     public void generateData(int user_x, int user_y) {
         Random rand = new Random();
 
-        //a minimum of 5 events will get created;
+        //total events to be created
         int total = rand.nextInt(50 + 5);
         //counter here plays two roles, one for ensuring a minimum number of events is created
         //and two, the role of an identifier for each event
