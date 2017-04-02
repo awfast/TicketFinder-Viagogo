@@ -1,15 +1,19 @@
 package Events;
 
+import java.util.List;
+
 public class Event {
 
-    int x,y,identifier,tickets,price;
+    int x,y,tickets;
+    String identifier;
+    List<Double> prices;
 
-    public Event(int x, int y, int identifier, int tickets, int price) {
+    public Event(int x, int y, String identifier, int tickets, List<Double> prices) {
         this.x = x;
         this.y = y;
         this.identifier = identifier;
         this.tickets = tickets;
-        this.price = price;
+        this.prices = prices;
     }
 
     public void setX(int x) {
@@ -20,7 +24,7 @@ public class Event {
         this.y = y;
     }
 
-    public void setIdentifier(int id) {
+    public void setIdentifier(String id) {
         this.identifier = id;
     }
 
@@ -28,8 +32,8 @@ public class Event {
         this.tickets = tickets;
     }
 
-    public void setPrice(int p) {
-        this.price = p;
+    public void setPrices(List<Double> p) {
+        this.prices = p;
     }
 
     public int getX() {
@@ -40,7 +44,7 @@ public class Event {
         return this.y;
     }
 
-    public int getIdentifier() {
+    public String getIdentifier() {
         return identifier;
     }
 
@@ -48,7 +52,7 @@ public class Event {
         return tickets;
     }
 
-    public int getPrice() {
-        return this.price;
+    public List<Double> getPrice() {
+        return this.prices;
     }
 }
